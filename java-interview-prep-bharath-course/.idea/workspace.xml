@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="46ea307f-2435-42c4-b98e-659dad276365" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../java-algorithm-practice/src/main/java/com/kingshuk/corejava/algorithms/sorting/LonelyIntegerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../parking-spot-rest-service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../parking-spot-rest-service/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../parking-spot-rest-service/bin/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../parking-spot-rest-service/bin/main/application.properties" afterDir="false" />
@@ -65,7 +72,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680534362195</updated>
+      <workItem from="1680534363520" duration="8000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
