@@ -68,10 +68,10 @@ atlassian-ide-plugin.xml
 
 # IDEA
 # ----
-!/.idea
-/.idea/*
-!/.idea/codeStyles
-!/.idea/inspectionProfiles
+.idea
+.idea/*
+.idea/codeStyles
+.idea/inspectionProfiles
 */**/.idea
 .shelf
 /*.iml
