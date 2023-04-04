@@ -1,4 +1,4 @@
-package org.kingshuk.corejava;
+package org.kingshuk.corejava.numberrelatedprograms.assignments;
 
 import java.util.Scanner;
 

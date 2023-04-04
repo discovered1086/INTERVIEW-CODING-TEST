@@ -1,4 +1,4 @@
-package org.kingshuk.corejava;
+package org.kingshuk.corejava.numberrelatedprograms;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

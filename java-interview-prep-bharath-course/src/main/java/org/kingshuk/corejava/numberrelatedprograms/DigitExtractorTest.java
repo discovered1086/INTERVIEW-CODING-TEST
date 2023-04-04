@@ -1,4 +1,4 @@
-package org.kingshuk.corejava;
+package org.kingshuk.corejava.numberrelatedprograms;
 
 import java.util.ArrayList;
 import java.util.List;
