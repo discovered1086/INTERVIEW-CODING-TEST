@@ -24,10 +24,16 @@ public class ConvertIntegerToBinarySimplerSolutionTest {
     public static void main(String[] args) {
         System.out.println("Enter the number");
         try (Scanner scanner = new Scanner(System.in)) {
-            int theNumber = scanner.nextInt();
+            long theNumber = scanner.nextLong();
 
             //Using inBuilt method from the Integer class
-            System.out.println(Integer.toBinaryString(theNumber));
+            String x = Long.toBinaryString(theNumber);
+            System.out.println(x);
+
+            System.out.println(x.concat("0".repeat(5)));
+            new String(new char[10]);
+
+
         }
     }
 }

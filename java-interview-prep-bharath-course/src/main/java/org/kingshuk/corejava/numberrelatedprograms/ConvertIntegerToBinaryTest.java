@@ -36,6 +36,8 @@ public class ConvertIntegerToBinaryTest {
             Arrays.stream(Arrays.copyOfRange(binary, 0, index)).sequential()
                     .forEach(System.out::print);
 
+
+
         }
     }
 }
