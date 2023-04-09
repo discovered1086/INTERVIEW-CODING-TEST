@@ -3,6 +3,7 @@ package org.kingshuk.corejava.numberrelatedprograms.assignments;
 public class AllTwoDigitSpecialNumberTest {
 
     public static void main(String[] args) {
+        System.out.println("Starting to loop through the numbers...");
         for (int i = 10; i < 100; i++) {
             int sum = 0;
             int multiplication = 1;
