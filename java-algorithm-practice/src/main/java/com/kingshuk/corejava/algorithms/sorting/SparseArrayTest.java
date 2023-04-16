@@ -31,6 +31,19 @@ class ResultCount {
     public void setCount(int count) {
         this.count = count;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ResultCount)) return false;
+        ResultCount that = (ResultCount) o;
+        return Objects.equals(queryString, that.queryString);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(queryString);
+    }
 }
 
 class SparseArrayResult {
