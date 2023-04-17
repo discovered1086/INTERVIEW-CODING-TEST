@@ -2,6 +2,9 @@ package org.kingshuk.corejava.stringprograms;
 
 
 
+import lombok.extern.slf4j.Slf4j;
+import lombok.extern.slf4j.XSlf4j;
+
 import java.util.Scanner;
 
 /**
@@ -11,10 +14,11 @@ import java.util.Scanner;
  * here 'jj' is there so the string indeed has duplicate consecutive
  * characters
  */
+@Slf4j
 public class DuplicateConsecutiveCharacterTest {
 
     public static void main(String[] args) {
-        System.out.println("Enter the String");
+       log.info("Enter the String");
         boolean duplicateConsecutiveCharacter = false;
         try (Scanner scanner = new Scanner(System.in)) {
             String input = scanner.nextLine();
@@ -26,7 +30,7 @@ public class DuplicateConsecutiveCharacterTest {
                 }
             }
 
-            System.out.println("\nDuplicate consecutive characters are {}", (duplicateConsecutiveCharacter) ? "present" : "not present");
+           log.info("\nDuplicate consecutive characters are {}", (duplicateConsecutiveCharacter) ? "present" : "not present");
         }
     }
 }

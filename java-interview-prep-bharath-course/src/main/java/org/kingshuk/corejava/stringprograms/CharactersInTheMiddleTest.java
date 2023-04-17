@@ -2,6 +2,10 @@ package org.kingshuk.corejava.stringprograms;
 
 
 
+import org.kingshuk.corejava.stringprograms.assignments.VowelsAndConsonantCountTest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Scanner;
 
 /**
@@ -11,9 +15,9 @@ import java.util.Scanner;
  * there will be two characters in the middle of the string
  */
 public class CharactersInTheMiddleTest {
-
+    private static final Logger LOGGER = LoggerFactory.getLogger(CharactersInTheMiddleTest.class);
     public static void main(String[] args) {
-        System.out.println("Enter the String");
+        LOGGER.info("Enter the String");
         try (Scanner scanner = new Scanner(System.in)) {
             String input = scanner.nextLine();
             String output;
@@ -32,7 +36,7 @@ public class CharactersInTheMiddleTest {
                 output = input.substring(indexOfMiddle, indexOfMiddle+1);
             }
 
-            System.out.println("\n The middle character(s) is/are: {}", output);
+            LOGGER.info("\n The middle character(s) is/are: {}", output);
         }
     }
 }

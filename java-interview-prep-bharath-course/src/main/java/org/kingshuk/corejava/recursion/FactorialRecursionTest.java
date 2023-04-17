@@ -2,15 +2,18 @@ package org.kingshuk.corejava.recursion;
 
 
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.Scanner;
 
+@Slf4j
 public class FactorialRecursionTest {
 
     public static void main(String[] args) {
-        System.out.println("Enter the number");
+       log.info("Enter the number");
         try (Scanner scanner = new Scanner(System.in)) {
             int input = scanner.nextInt();
-            System.out.println("The factorial of {} is {}", input, factorialCalculator(input));
+           log.info("The factorial of {} is {}", input, factorialCalculator(input));
         }
     }
 
