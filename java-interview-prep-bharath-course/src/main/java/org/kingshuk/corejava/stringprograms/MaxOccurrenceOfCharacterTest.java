@@ -9,19 +9,19 @@ public class MaxOccurrenceOfCharacterTest {
         System.out.println("Enter the String");
         String theString = scanner.next();
 
-        int [] charHolder = new int[256];
+        int[] charHolder = new int[256];
 
-        for(int i=0;i<theString.length();i++){
+        for (int i = 0; i < theString.length(); i++) {
             charHolder[theString.charAt(i)]++;
         }
 
         int max = 0;
-        for(int j=0;j<charHolder.length;j++){
-            if(charHolder[j] >charHolder[max]){
+        for (int j = 0; j < charHolder.length; j++) {
+            if (charHolder[j] > charHolder[max]) {
                 max = j;
             }
         }
 
-        System.out.println("The most occurring character is: "+ (char)max);
+        System.out.println("The most occurring character is: " + (char) max);
     }
 }
