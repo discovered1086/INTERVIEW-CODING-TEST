@@ -173,7 +173,7 @@ public class BracketTest {
         System.out.println("Stray bracket detected? " + strayDetected);
 
         return !strayDetected
-                && allBrackets.stream().allMatch(b -> b.isClosed()) && !breachDetected;
+                && allBrackets.stream().allMatch(Bracket::isClosed) && !breachDetected;
 
     }
 }
