@@ -1,4 +1,4 @@
-import com.kingshuk.corejava.algorithms.singlelinkedlist.SingleLinkedList;
+import com.kingshuk.corejava.algorithms.linkedlist.singlelinkedlist.SingleLinkedList;
 
 void main() {
     SingleLinkedList linkedList = new SingleLinkedList();
@@ -7,12 +7,12 @@ void main() {
         linkedList.createNode(i);
     }
 
-    System.out.println("Before insertion....");
+    System.out.println("Before removal....");
     linkedList.traverseList();
     System.out.println("================================");
 
-    linkedList.insertNodeAfter(50, 5);
+    linkedList.removeMatchingNode(4);
 
-    System.out.println("After insertion....");
+    System.out.println("After removal....");
     linkedList.traverseList();
 }

@@ -1,4 +1,4 @@
-import com.kingshuk.corejava.algorithms.singlelinkedlist.SingleLinkedList;
+import com.kingshuk.corejava.algorithms.linkedlist.singlelinkedlist.SingleLinkedList;
 
 void main() {
     SingleLinkedList linkedList = new SingleLinkedList();

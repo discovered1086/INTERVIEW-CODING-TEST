@@ -1,4 +1,4 @@
-package com.kingshuk.corejava.algorithms.circularsinglelinkedlist;
+package com.kingshuk.corejava.algorithms.linkedlist.circularsinglelinkedlist;
 
 import lombok.*;
 

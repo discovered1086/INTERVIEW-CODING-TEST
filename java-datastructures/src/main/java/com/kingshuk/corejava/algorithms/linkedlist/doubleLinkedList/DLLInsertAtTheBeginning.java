@@ -1,4 +1,4 @@
-import com.kingshuk.corejava.algorithms.doubleLinkedList.DoubleLinkedList;
+import com.kingshuk.corejava.algorithms.linkedlist.doubleLinkedList.DoubleLinkedList;
 
 void main() {
     DoubleLinkedList linkedList = new DoubleLinkedList();

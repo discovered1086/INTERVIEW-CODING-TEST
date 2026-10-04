@@ -1,18 +1,18 @@
-import com.kingshuk.corejava.algorithms.doubleLinkedList.DoubleLinkedList;
+import com.kingshuk.corejava.algorithms.linkedlist.singlelinkedlist.SingleLinkedList;
 
 void main() {
-    DoubleLinkedList linkedList = new DoubleLinkedList();
+    SingleLinkedList linkedList = new SingleLinkedList();
 
     for (int i = 0; i < 5; i++) {
         linkedList.createNode(i);
     }
 
     System.out.println("Before insertion....");
-    linkedList.traverseListForward();
+    linkedList.traverseList();
     System.out.println("================================");
 
-    linkedList.insertAtTheEnd(50);
+    linkedList.insertNodeAfter(50, 5);
 
     System.out.println("After insertion....");
-    linkedList.traverseListForward();
+    linkedList.traverseList();
 }

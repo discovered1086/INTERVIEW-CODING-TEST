@@ -1,4 +1,4 @@
-import com.kingshuk.corejava.algorithms.singlelinkedlist.SingleLinkedList;
+import com.kingshuk.corejava.algorithms.linkedlist.singlelinkedlist.SingleLinkedList;
 
 void main() {
     SingleLinkedList linkedList = new SingleLinkedList();
@@ -11,7 +11,7 @@ void main() {
     linkedList.traverseList();
     System.out.println("================================");
 
-    linkedList.removeMatchingNode(4);
+    linkedList.clearList();
 
     System.out.println("After removal....");
     linkedList.traverseList();

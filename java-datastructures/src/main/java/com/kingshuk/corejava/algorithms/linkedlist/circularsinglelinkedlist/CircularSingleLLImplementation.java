@@ -1,4 +1,4 @@
-import com.kingshuk.corejava.algorithms.circularsinglelinkedlist.CircularSingleLinkedList;
+import com.kingshuk.corejava.algorithms.linkedlist.circularsinglelinkedlist.CircularSingleLinkedList;
 
 void main() {
     CircularSingleLinkedList linkedList = new CircularSingleLinkedList();
