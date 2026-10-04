@@ -1,4 +1,4 @@
-package com.kingshuk.corejava.algorithms;
+package com.kingshuk.corejava.algorithms.singlelinkedlist;
 
 import lombok.*;
 

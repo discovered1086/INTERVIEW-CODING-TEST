@@ -1,4 +1,4 @@
-import com.kingshuk.corejava.algorithms.SingleLinkedList;
+import com.kingshuk.corejava.algorithms.singlelinkedlist.SingleLinkedList;
 
 void main() {
     SingleLinkedList linkedList = new SingleLinkedList();
@@ -7,12 +7,12 @@ void main() {
         linkedList.createNode(i);
     }
 
-    System.out.println("Before insertion....");
+    System.out.println("Before reversal....");
     linkedList.traverseList();
     System.out.println("================================");
 
-    linkedList.insertNodeAtTheEnd(50);
+    linkedList.reverse();
 
-    System.out.println("After insertion....");
+    System.out.println("After reversal....");
     linkedList.traverseList();
 }

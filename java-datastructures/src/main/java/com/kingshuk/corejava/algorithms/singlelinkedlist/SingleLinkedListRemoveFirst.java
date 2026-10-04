@@ -1,4 +1,4 @@
-import com.kingshuk.corejava.algorithms.SingleLinkedList;
+import com.kingshuk.corejava.algorithms.singlelinkedlist.SingleLinkedList;
 
 void main() {
     SingleLinkedList linkedList = new SingleLinkedList();
@@ -11,7 +11,7 @@ void main() {
     linkedList.traverseList();
     System.out.println("================================");
 
-    linkedList.reverse();
+    linkedList.removeFirstNode();
 
     System.out.println("After reversal....");
     linkedList.traverseList();

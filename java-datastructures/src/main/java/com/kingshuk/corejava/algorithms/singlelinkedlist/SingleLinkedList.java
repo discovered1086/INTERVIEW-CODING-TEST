@@ -1,4 +1,4 @@
-package com.kingshuk.corejava.algorithms;
+package com.kingshuk.corejava.algorithms.singlelinkedlist;
 
 import lombok.*;
 
@@ -106,32 +106,107 @@ public class SingleLinkedList {
      * Let's trace this linked list for each loop 1 -> 2 -> 3 -> null
      * Initial state
      * prev (null)        curr
-     *     ↓                 ↓
-     *   [null]             [1]  ──>  [2]  ──>  [3]  ──>  null
+     * ↓                 ↓
+     * [null]             [1]  ──>  [2]  ──>  [3]  ──>  null
      * <p>
      * After iteration 1
-     *               prev        curr
-     *               ↓           ↓
-     *   null  <──  [1]  <---   [2]  ──>  [3]  ──>  null
+     * prev        curr
+     * ↓           ↓
+     * null  <──  [1]  <---   [2]  ──>  [3]  ──>  null
      * <p>
      * After iteration 2
-     *                                 prev     curr
-     *                                 ↓         ↓
-     *         null  <──  [1]  <---   [2]  <---  [3]  ──>  null
+     * prev     curr
+     * ↓         ↓
+     * null  <──  [1]  <---   [2]  <---  [3]  ──>  null
      *
      */
     public void reverse() {
-        ListNode nextNode = null;
+        ListNode nextNode;
         ListNode previousNode = null;
         ListNode currentNode = head;
 
         while (currentNode != null) {
             nextNode = currentNode.getNext();
+            //Update the value
             currentNode.setNext(previousNode);
+            //Move the pointers
             previousNode = currentNode;
             currentNode = nextNode;
         }
 
         head = previousNode;
+    }
+
+
+    public boolean hasLoop() {
+        ListNode startPointer = head;
+        ListNode endPointer = head;
+
+        while (startPointer != null && endPointer != null && endPointer.getNext() != null) {
+            startPointer = startPointer.getNext();
+            endPointer = endPointer.getNext().getNext();
+
+            if (startPointer == endPointer) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void removeFirstNode() {
+        if (head != null) {
+            head = head.getNext();
+        }
+    }
+
+    public void removeMatchingNode(int value) {
+        ListNode previousNode = null;
+        ListNode nextNode = null;
+        ListNode currentNode = head;
+
+        while (currentNode != null) {
+            nextNode = currentNode.getNext();
+            if (currentNode.getVal() == value) {
+                if (currentNode == head) {
+                    head = nextNode;
+                } else {
+                    previousNode.setNext(nextNode);
+                }
+                return;
+            }
+
+            previousNode = currentNode;
+            currentNode = nextNode;
+
+        }
+    }
+
+    public void clearList() {
+        head = null;
+    }
+
+    public int findNthNodeFromTheEnd(int position) {
+        ListNode target = head;
+        ListNode current = head;
+        int counter = 0;
+
+        if (head == null) {
+            throw new IllegalArgumentException("The list is empty");
+        }
+
+        while (target != null) {
+            while (current != null) {
+                current = current.getNext();
+                counter++;
+            }
+            if (counter == position) {
+                return target.getVal();
+            }
+            target = target.getNext();
+            current = target;
+            counter = 0;
+        }
+
+        return -1;
     }
 }
